@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+    font-family: 'Rubik';
+}
+
+.container {
+    z-index: -1;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    width: 350px;
+    height: 50vh;
+    border-radius: 0 0 500px 500px;
+    background: linear-gradient(to bottom left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header {
+    width: 320px;
+    border: 10px solid white;
+    border-radius: 30px;
+    box-shadow: 0px 20px 25px hsl(271, 36%, 24%, 0.2);
+    background-color: white;
+}
+
+div.header {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 5px 5px;
+    background: linear-gradient(to bottom left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+
+
+div.samuel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5% 0;
+}
+
+i {
+    color: white;
+}
+
+div.samuel i:last-child {
+    padding-left: 30%;
+}
+
+div.header div.top {
+    width: 70%;
+    height: 3vh;
+    border-radius: 0 0 25px 25px;
+    background-color: white;
+    align-self: center;
+}
+
+div.header div.samuel h1 {
+    font-size: 15px;
+    color: white;
+}
+
+div.header div.samuel p {
+    font-size: 11px;
+    font-weight: 300;
+    color: hsl(276, 100%, 81%);
+}
+
+div.header img {
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+div.chat {
+    border: 2px solid hsl(206, 6%, 79%);
+    border-radius: 0 0 20px 20px;
+    border-top: initial;
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.chat img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+div.chat p.he {
+    background-color: hsl(206, 6%, 79%, 0.3);
+    border-radius: 15px 15px 15px 5px;
+    font-size: 10px;
+    padding: 2% 13% 2% 5%;
+    margin: 0 30% 0 5%;
+    color: hsl(276, 55%, 52%);
+}
+
+div.chat p.he:first-child {
+    margin-top: 5%;
+}
+
+div.dog,
+p.me {
+    align-self: flex-end;
+}
+
+div.dog {
+    margin-right: 5%;
+    display: flex;
+    gap: 10px;
+}
+
+div.chat p.me {
+    background-color: white;
+    border-radius: 15px 15px 5px 15px;
+    font-size: 10px;
+    padding: 2% 2% 2% 5%;
+    margin: 0 5% 0 40%;
+    color: hsl(270, 7%, 64%);
+}
+
+div.price {
+    background-color: hsl(206, 6%, 79%, 0.3);
+    border-radius: 15px 15px 15px 5px;
+    font-size: 10px;
+    padding: 3%;
+    margin: 0 20% 0 5%;
+    color: hsl(276, 55%, 52%);
+    background: linear-gradient(to bottom left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.circle {
+    width: 15px;
+    height: 1.2vh;
+    border: 1px solid hsl(276, 100%, 81%);
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-top: 2%;
+    align-self: flex-start;
+}
+
+div.price p {
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(276, 100%, 88%);
+    white-space: nowrap;
+}
+
+div.price h2 {
+    display: flex;
+    width: 120px;
+    justify-content: flex-end;
+    color: white;
+}
+
+.message {
+    background-color: white;
+    width: 90%;
+    padding: 2% 2% 2% 5%;
+    align-self: center;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    border-radius: 25px;
+}
+
+.message i {
+    width: 25px;
+    background-color: hsl(271, 36%, 24%);
+    text-align: center;
+    height: 25px;
+    padding-top: 2%;
+    border-radius: 50%;
+}
+
+.message p {
+    font-size: 10px;
+    align-self: center;
+    color: hsl(206, 6%, 79%);
+}
+
+section {
+    text-align: center;
+    width: 390px;
+}
+
+section h1 {
+    font-size: 40px;
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 5%;
+}
+
+section p {
+    line-height: 1.8;
+    padding: 0 10%;
+}
+
+/* media */
+
+@media (min-width: 920px) {
+    .container2 {
+        flex-direction: row;
+        width: 920px;
+    }
+
+    .container {
+        bottom: 30%;
+        right: 68%;
+        width: 550px;
+        height: 80vh;
+    }
+
+    section {
+        width: 520px;
+        text-align: start;
+    }
+
+    section h1 {
+        margin-left: 9%;
+    }
+    section p{
+        font-size: 15px;
+    }
+    .cont2 {
+        z-index: -1;
+        position: absolute;
+        top: 30%;
+        left: 68%;
+        width: 550px;
+        height: 80vh;
+        border-radius: 500px 500px 0 0;
+        background-color: hsl(276, 100%, 81%,0.1);
+    }
+}
