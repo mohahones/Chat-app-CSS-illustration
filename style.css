@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     flex-direction: column;
     font-family: 'Rubik';
 }
@@ -255,3 +255,4 @@ section p {
     }
 
 }
+
