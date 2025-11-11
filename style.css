@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     font-family: 'Rubik';
 }
@@ -253,4 +253,5 @@ section p {
         border-radius: 500px 500px 0 0;
         background-color: hsl(276, 100%, 81%,0.1);
     }
+
 }
